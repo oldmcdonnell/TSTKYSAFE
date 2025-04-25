@@ -16,3 +16,5 @@ Living rough is hard. You shouldn't have to do it alone.
 
 ### Developer: Eoin McDonnell  
 **Tools**: Vue.js frontend, Laravel backend, Google Maps API
+
+![Map Preview](assets/map.jpg)

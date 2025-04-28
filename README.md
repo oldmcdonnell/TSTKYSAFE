@@ -5,7 +5,7 @@ You may have to disclose some data, but it will be kept private and protected.
 
 We're too broke to sell your data, but we're smart enough to secure it.
 
-Using the Google API and mapping tools, we’ll create a drag-and-drop interface so users can check in with approximate locations. This can also be used to alert others in your area—or everyone—if you choose to share.
+Using the Google API and mapping tools, we’ll create a drag-and-drop interface so users can check in with approximate locations. This can also be used to alert others in your area—or everyone—if you choose to share. Checkin location can also be turned off or on which might alert people in a specified range. 
 
 The ultimate goal isn’t just a community roll call.  
 It’s a **safe haven** for people who might not otherwise have one.  

@@ -17,4 +17,6 @@ Living rough is hard. You shouldn't have to do it alone.
 ### Developer: Eoin McDonnell  
 **Tools**: Vue.js frontend, Laravel backend, Google Maps API
 
+Admin access only by yubi-key PICO2 auth, if keys are lost there is no fail safe. We would rather eceryone be safe than expose them. 
+
 ![Map Preview](assets/map.jpg)

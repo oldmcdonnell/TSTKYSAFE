@@ -20,3 +20,28 @@ Living rough is hard. You shouldn't have to do it alone.
 Admin access only by yubi-key, FICO2 auth, if keys are lost there is no fail safe. We would rather everyone be safe and lose all inforamation. 
 
 ![Map Preview](assets/map.jpg)
+
+
+---
+
+## Project Structure
+
+php artisan serve
+
+API availab le at http://127.0.0.1:8000
+
+
+## Getting Started
+
+### Prerequisites
+- PHP 8.1+ (we're using 8.2.4 via XAMPP)
+- Composer (2.8+)
+- Node.js & npm (for Vue frontend)
+
+---
+
+### 🖥 Backend (Laravel API)
+
+1. Navigate to the backend directory:
+   ```bash
+   cd backend

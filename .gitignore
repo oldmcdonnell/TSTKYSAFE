@@ -1,0 +1,29 @@
+# Node & frontend junk
+node_modules/
+dist/
+.env
+.env.local
+
+# Laravel
+/vendor/
+/storage/*.key
+/storage/*.log
+/public/storage
+.env
+.env.*
+.phpunit.result.cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SQLite
+database/*.sqlite
+
+# IDEs
+.vscode/
+.idea/
+
+# Tailwind
+postcss.config.js
+tailwind.config.js

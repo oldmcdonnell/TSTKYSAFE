@@ -45,3 +45,6 @@ API availab le at http://127.0.0.1:8000
 1. Navigate to the backend directory:
    ```bash
    cd backend
+
+
+Laravel setup

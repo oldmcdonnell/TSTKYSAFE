@@ -17,33 +17,33 @@ Ensure the following are installed on your system:
 ## Installation Steps
 # Navigate to the backend directory:
 
-"""
+```
 cd backend
-"""
+```
 # Install PHP dependencies:
 
-"""
+```
 composer install
-"""
+```
 
 # Copy the .env file and configure as needed:
 
-"""
+```
 cp .env.example .env
-"""
+```
 
 # Generate the Laravel app key:
 
-"""
+```
 php artisan key:generate
-"""
+```
 
 # Run database migrations (if needed):
 
-#bash
-""" 
+```
 php artisan migrate
-"""
+```
+
 # Start the Laravel development server:
 
 #php artisan serve
@@ -54,9 +54,8 @@ php artisan migrate
 # You should see a response like:
 
 # json
-"""
+```
 {
   "message": "pong"
 }
-
-""
+```

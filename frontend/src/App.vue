@@ -4,12 +4,18 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted() {
+    fetch('http://127.0.0.1:8000/api/ping')
+      .then(res => res.json())
+      .then(data => console.log("✅ Ping Success:", data))
+      .catch(err => console.error("❌ Ping Error:", err));
   }
 }
 </script>

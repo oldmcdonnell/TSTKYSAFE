@@ -42,13 +42,4 @@ API availab le at http://127.0.0.1:8000
 
 ### 🖥 Backend (Laravel API)
 
-To set up the backend API, follow the instructions in backend/setup.md
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-
-   a. composer install
-   b. php artisan --version
-   c. php artisan serve
-   d: php artisan make:provider RouteServiceProvider
+## To set up the backend API, follow the instructions in backend/setup.md

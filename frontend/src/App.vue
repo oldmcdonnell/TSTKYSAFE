@@ -1,18 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <CheckInForm />
+    <Map />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HelloWorld from './components/HelloWorld.vue'
+import CheckInForm from './components/CheckInForm.vue'
+import Map from './components/Map.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    CheckInForm,
+    Map
   },
   mounted() {
-    fetch('http://127.0.0.1:8000/api/ping')
+    fetch(`${process.env.VUE_APP_API_BASE}/api/ping`)
       .then(res => res.json())
       .then(data => console.log("✅ Ping Success:", data))
       .catch(err => console.error("❌ Ping Error:", err));

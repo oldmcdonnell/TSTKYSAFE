@@ -1,11 +1,29 @@
 <template>
   <div>
-    <h2>Map Component</h2>
+    <GoogleMap :center="userLocation" />
+    <CheckInForm :location="userLocation" />
   </div>
 </template>
 
 <script>
+import CheckInForm from '../components/CheckInForm.vue'
+import GoogleMap from '../components/GoogleMap.vue'
+
 export default {
-  name: 'MapComponent' // Multi-word component name avoids ESLint error
+  components: {
+    CheckInForm,
+    GoogleMap
+  },
+  data() {
+    return {
+      userLocation: { lat: null, lng: null }
+    }
+  },
+  mounted() {
+    navigator.geolocation.getCurrentPosition(position => {
+      this.userLocation.lat = position.coords.latitude
+      this.userLocation.lng = position.coords.longitude
+    })
+  }
 }
 </script>

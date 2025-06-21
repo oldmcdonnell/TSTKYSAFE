@@ -16,9 +16,9 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import CheckInForm from './components/CheckInForm.vue';
-import Map from './components/Map.vue';
-import LoginForm from './components/LoginForm.vue';
-import RegisterForm from './components/RegisterForm.vue';
+import Map from './views/Map.vue';
+import LoginForm from './views/LoginForm.vue';
+import RegisterForm from './views/RegisterForm.vue';
 
 export default {
   name: 'App',

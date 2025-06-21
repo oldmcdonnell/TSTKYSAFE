@@ -1,9 +1,9 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
-import LoginForm from '../components/LoginForm.vue';
-import RegisterForm from '../components/RegisterForm.vue';
+import LoginForm from '../views/LoginForm.vue';
+import RegisterForm from '../views/RegisterForm.vue';
 import CheckInForm from '../components/CheckInForm.vue';
-import Map from '../components/Map.vue';
+import Map from '../views/Map.vue';
 
 const routes = [
   { path: '/', redirect: '/login' },

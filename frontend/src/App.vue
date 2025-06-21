@@ -16,7 +16,7 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import CheckInForm from './components/CheckInForm.vue';
-import Map from './views/Map.vue';
+import Map from './views/TSTKyMap.vue';
 import LoginForm from './views/LoginForm.vue';
 import RegisterForm from './views/RegisterForm.vue';
 

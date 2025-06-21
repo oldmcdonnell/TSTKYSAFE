@@ -3,13 +3,15 @@
 </template>
 
 <script>
+/* global google */
+const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 export default {
   name: 'GoogleMap',
   props: {
     center: {
       type: Object,
       required: true,
-      default: () => ({ lat: 37.7749, lng: -122.4194 }) // Default to San Francisco
+      default: () => ({ lat: 37.7749, lng: -122.4194 })
     }
   },
   data() {
@@ -21,7 +23,7 @@ export default {
   mounted() {
     if (!window.google) {
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
       script.async = true;
       window.initMap = this.initMap;
       document.head.appendChild(script);
@@ -47,10 +49,7 @@ export default {
           lng: e.latLng.lng()
         };
 
-        // Move the marker
         this.marker.setPosition(coords);
-
-        // Emit the new location
         this.$emit('locationSelected', coords);
       });
     }

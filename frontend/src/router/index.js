@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import LoginForm from '../views/LoginForm.vue';
 import RegisterForm from '../views/RegisterForm.vue';
 import CheckInForm from '../components/CheckInForm.vue';
-import Map from '../views/Map.vue';
+import Map from '../views/TSTKyMap.vue';
 
 const routes = [
   { path: '/', redirect: '/login' },
